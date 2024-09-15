@@ -1,4 +1,3 @@
-package BankQ;
 
 public class BankAccount {
 	
