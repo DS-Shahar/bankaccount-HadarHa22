@@ -4,9 +4,9 @@ import java.util.*;
 public class Main {
 	static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
+		mainBank();
 		mainRec();
 		mainCir();
-		mainBank();
 	}
 	public static mainBank(){
 		BankAccount acc1 = new BankAccount(1000,-1000,"lisa");
