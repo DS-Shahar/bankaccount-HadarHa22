@@ -6,8 +6,34 @@ public class Main {
 	public static void main(String[] args) {
 		mainRec();
 		mainCir();
+		mainBank();
+	}
+	public static mainBank(){
+		BankAccount acc1 = new BankAccount(1000,-1000,"lisa");
+		BankAccount acc2 = new BankAccount(1000,-1000,"bob");
+		System.out.println(acc1.toString());
+		System.out.println(acc2.toString());
+		boolean check = acc1.transfer(acc2, 500);
+		if (check == false) {
+			System.out.println("error amount can not be transferd");
+		}
+		else {
+			System.out.println("transfer from lisa to bob success = " + check);
+		}
+		System.out.println(acc1.toString());
+		System.out.println(acc2.toString());
+		check = acc1.transfer(acc2, 1600);
+		if (check == false){
+			System.out.println("error amount can not be transferd");
+		}
+		else {
+			System.out.println("transfer from lisa to bob success = " + check);
+		} 
+		System.out.println(acc1.toString());
+		System.out.println(acc2.toString());
 	}
 
+	
 	public static void mainRec() {
 	// rectangle 1
 			System.out.println("enter length");
